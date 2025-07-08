@@ -1,0 +1,56 @@
+{
+  "name": "sales-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered sales automation MCP for strategic guidance API business",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "dashboard": "node scripts/start-dashboard.js",
+    "dashboard-api": "node src/api-server.js",
+    "dashboard-dev": "cd dashboard && npm start",
+    "build-dashboard": "cd dashboard && npm run build",
+    "test": "node scripts/test-mcp.js",
+    "test-research": "node scripts/test-research.js",
+    "test-single": "node scripts/test-research.js --single",
+    "test-batch": "node scripts/test-research.js --batch",
+    "setup-gmail": "node scripts/setup-gmail.js",
+    "quick-gmail": "node scripts/quick-gmail-setup.js",
+    "validate-oauth": "node scripts/validate-oauth.js",
+    "update-oauth": "node scripts/update-env.js",
+    "debug-oauth": "node scripts/debug-oauth.js",
+    "test-oauth-url": "node scripts/test-oauth-url.js",
+    "test-gmail": "node scripts/setup-gmail.js --test",
+    "test-email": "node scripts/test-email-generation.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Telff/sales-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Telff/sales-mcp/issues"
+  },
+  "homepage": "https://github.com/Telff/sales-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "dotenv": "^17.0.1",
+    "express": "^4.18.2",
+    "googleapis": "^150.0.1",
+    "openai": "^5.8.2",
+    "puppeteer": "^24.12.0",
+    "winston": "^3.17.0",
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  }
+}
